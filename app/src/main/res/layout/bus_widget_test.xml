@@ -1,0 +1,636 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="@dimen/widget_margin"
+    android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/workspace_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="13pt"
+            android:textColor="#b1def6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/workspace_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19"
+        android:orientation="horizontal">
+
+        <FrameLayout android:id="@+id/busStationFrame"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="165">
+
+            <LinearLayout android:id="@+id/arrStationFrame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout android:id="@+id/bf_Empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1" />
+
+                <LinearLayout android:id="@+id/busImageLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <LinearLayout android:id="@+id/busIcon4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bus"
+                        android:orientation="horizontal"
+                        android:layout_weight="13"
+                        android:visibility="invisible">
+
+                        <TextView android:id="@+id/stat_NM4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="busNM"
+                            android:textColor="#000000"
+                            android:textSize="7pt"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                        <TextView android:id="@+id/stat_Time4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="busmin"
+                            android:textColor="#05aaff"
+                            android:textSize="6pt"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/iconEmpty3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout android:id="@+id/busIcon3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bus"
+                        android:orientation="horizontal"
+                        android:layout_weight="13"
+                        android:visibility="invisible">
+
+                        <TextView android:id="@+id/stat_NM3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="busNM"
+                            android:textColor="#000000"
+                            android:textSize="7pt"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                        <TextView android:id="@+id/stat_Time3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="busmin"
+                            android:textColor="#05aaff"
+                            android:textSize="6pt"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/iconEmpty2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout android:id="@+id/busIcon2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bus"
+                        android:orientation="horizontal"
+                        android:layout_weight="13"
+                        android:visibility="invisible">
+
+                        <TextView android:id="@+id/stat_NM2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="busNM"
+                            android:textColor="#000000"
+                            android:textSize="7pt"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                        <TextView android:id="@+id/stat_Time2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="busmin"
+                            android:textColor="#05aaff"
+                            android:textSize="6pt"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/iconEmpty1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout android:id="@+id/busIcon1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bus"
+                        android:orientation="horizontal"
+                        android:layout_weight="13"
+                        android:visibility="invisible">
+
+                        <TextView android:id="@+id/stat_NM1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="busNM"
+                            android:textColor="#000000"
+                            android:textSize="7pt"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                        <TextView android:id="@+id/stat_Time1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="busmin"
+                            android:textColor="#05aaff"
+                            android:textSize="6pt"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/iconEmpty0"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout android:id="@+id/busIcon0"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bus_on"
+                        android:orientation="horizontal"
+                        android:layout_weight="13"
+                        android:visibility="invisible">
+
+                        <TextView android:id="@+id/stat_NM0"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="busNM"
+                            android:textColor="#000000"
+                            android:textSize="7pt"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                        <TextView android:id="@+id/stat_Time0"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="busmin"
+                            android:textColor="#ffffff"
+                            android:textSize="6pt"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/ws2_Empty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="31"/>
+
+    </LinearLayout>
+
+    <FrameLayout android:id="@+id/emptyFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:visibility="invisible"/>
+
+
+    <LinearLayout android:id="@+id/workspace_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal">
+
+        <LinearLayout android:id="@+id/busArriveFrame"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/busBox5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/box"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout android:id="@+id/boxEmpty5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/busNM5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="busname"
+                            android:textColor="#ffffff"
+                            android:textSize="10pt"/>
+
+                        <TextView
+                            android:id="@+id/busTime5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="bustime"
+                            android:textColor="#05aaff"
+                            android:textSize="7pt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/busEmpty4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:id="@+id/busBox4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/box"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout android:id="@+id/boxEmpty4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/busNM4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="busname"
+                            android:textColor="#ffffff"
+                            android:textSize="10pt"/>
+
+                        <TextView
+                            android:id="@+id/busTime4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="bustime"
+                            android:textColor="#05aaff"
+                            android:textSize="7pt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/busEmpty3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:id="@+id/busBox3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/box"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout android:id="@+id/boxEmpty3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/busNM3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="busname"
+                            android:textColor="#ffffff"
+                            android:textSize="10pt"/>
+
+                        <TextView
+                            android:id="@+id/busTime3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="bustime"
+                            android:textColor="#05aaff"
+                            android:textSize="7pt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/busEmpty2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:id="@+id/busBox2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/box"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout android:id="@+id/boxEmpty2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/busNM2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="busname"
+                            android:textColor="#ffffff"
+                            android:textSize="10pt"/>
+
+                        <TextView
+                            android:id="@+id/busTime2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="bustime"
+                            android:textColor="#05aaff"
+                            android:textSize="7pt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/busEmpty1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:id="@+id/busBox1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/box"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout android:id="@+id/boxEmpty1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/busNM1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="busname"
+                            android:textColor="#ffffff"
+                            android:textSize="10pt"/>
+
+                        <TextView
+                            android:id="@+id/busTime1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="bustime"
+                            android:textColor="#05aaff"
+                            android:textSize="7pt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/busEmpty0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:id="@+id/busBox0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/box_on"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout android:id="@+id/boxEmpty0"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/busNM0"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:duplicateParentState="true"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="busname"
+                            android:textColor="#ffffff"
+                            android:textSize="10pt" />
+
+                        <TextView
+                            android:id="@+id/busTime0"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="bustime"
+                            android:textColor="#05aaff"
+                            android:textSize="7pt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout android:id="@+id/ws3_Empty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"></FrameLayout>
+
+        <LinearLayout android:id="@+id/infomationFrame"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="23">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="43"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/stationNMTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Station_Name"
+                    android:textColor="#ffffff"
+                    android:textSize="13pt"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal|center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="68"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/staticText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="soon"
+                    android:textSize="8pt"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+                <TextView android:id="@+id/arrBusText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="busNm1\nbusNm2"
+                    android:textSize="7pt"
+                    android:textColor="#05aaff"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

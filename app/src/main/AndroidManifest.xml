@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.planuri.allsampletest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name">
+        <receiver android:name=".BusWidgetTest">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.planuri.allsampletest.BUTTON_CLICKED_0" />
+                <action android:name="com.planuri.allsampletest.BUTTON_CLICKED_1" />
+                <action android:name="com.planuri.allsampletest.BUTTON_CLICKED_2" />
+                <action android:name="com.planuri.allsampletest.BUTTON_CLICKED_3" />
+                <action android:name="com.planuri.allsampletest.BUTTON_CLICKED_4" />
+                <action android:name="com.planuri.allsampletest.BUTTON_CLICKED_5" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/bus_widget_test_info" />
+        </receiver>
+    </application>
+
+</manifest>
